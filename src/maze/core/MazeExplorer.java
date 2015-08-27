@@ -18,7 +18,7 @@ public class MazeExplorer implements BestFirstObject<MazeExplorer> {
 	}
 	
 	public MazeCell getLocation() {return location;}
-
+    public Maze getMaze() { return this.m;}
 
 
 	@Override
