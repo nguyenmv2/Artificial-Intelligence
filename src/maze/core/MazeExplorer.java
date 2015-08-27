@@ -28,21 +28,22 @@ public class MazeExplorer implements BestFirstObject<MazeExplorer> {
         ArrayList<MazeCell> neighbors = m.getNeighbors(this.getLocation());
 
         for ( MazeCell node : neighbors){
-            if ( !m.blocked(this.getLocation(), node)) {
-                result.add(new MazeExplorer(this.m, node));
-                if (m.isTreasure(node)){ treasureFound.add(node);}
-
+            if ( !m.blocked(this.getLocation(), node) && m.within(this.getLocation())) {
+                MazeExplorer successor = new MazeExplorer(m, node);
+                if (m.isTreasure(node)) {
+                    successor.treasureFound.add(node);
+                }
+                successor.addTreasures(treasureFound);
+                result.add(successor);
             }
-        }
-        for (MazeExplorer node : result){
-           node.addTreasures(treasureFound);
         }
         return result;
 	}
 	 public void addTreasures(Collection<MazeCell> treasures) {
 		treasureFound.addAll(treasures);
 	}
-	
+
+
 	public String toString() {
 		StringBuilder treasures = new StringBuilder();
 		for (MazeCell t: treasureFound) {

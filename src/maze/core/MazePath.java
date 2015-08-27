@@ -55,12 +55,8 @@ public class MazePath {
             }
             if (target.isTreasure(c)) {treasureFound.add(c);}
         }
-        
         for (MazeCell trs: target.getTreasures()) {
-            System.out.println(trs.toString());
-            System.out.println(treasureFound);
             if (!treasureFound.contains(trs)) {
-                System.out.println("Not enaf treasure");
                 return false;
             }
         }
