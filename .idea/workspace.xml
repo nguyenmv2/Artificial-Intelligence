@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62dee350-033a-49de-bc59-42d716e6203c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java" />
-      <change type="MODIFICATION" beforePath="C:\Users\nguye\IdeaProjects\ArtificialIntelligence\out\production\ArtificialIntelligence\maze\heuristics\Manhattan.class" afterPath="C:\Users\nguye\IdeaProjects\ArtificialIntelligence\out\production\ArtificialIntelligence\maze\heuristics\Manhattan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ArtificialIntelligence/maze/core/MazeExplorer.class" afterPath="$PROJECT_DIR$/out/production/ArtificialIntelligence/maze/core/MazeExplorer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/heuristics/Manhattan.java" afterPath="$PROJECT_DIR$/src/maze/heuristics/Manhattan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/heuristics/ManhattanWithTiebreaker.java" afterPath="$PROJECT_DIR$/src/maze/heuristics/ManhattanWithTiebreaker.java" />
+      <change type="MOVED" beforePath="C:\Users\nguye\IdeaProjects\ArtificialIntelligence\src\maze\heuristics\GreedyTreasure.java" afterPath="$PROJECT_DIR$/src/maze/heuristics/ManhattanTreasure.java" />
+      <change type="MODIFICATION" beforePath="C:\Users\nguye\IdeaProjects\ArtificialIntelligence\out\production\ArtificialIntelligence\maze\heuristics\GreedyTreasure.class" afterPath="C:\Users\nguye\IdeaProjects\ArtificialIntelligence\out\production\ArtificialIntelligence\maze\heuristics\GreedyTreasure.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java" afterPath="$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ArtificialIntelligence.iws" />
@@ -45,11 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GreedyTreasure.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java">
+      <file leaf-file-name="ManhattanTreasure.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maze/heuristics/ManhattanTreasure.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GreedyTreasure.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.57990116">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManhattanWithTiebreaker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManhattanWithTiebreaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maze/heuristics/ManhattanWithTiebreaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6523888">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -112,16 +122,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BestFirstObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/search/core/BestFirstObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -638,12 +638,12 @@
       <option name="number" value="Default" />
       <updated>1440721657448</updated>
       <workItem from="1440721658680" duration="28000" />
-      <workItem from="1440996161672" duration="5898000" />
+      <workItem from="1440996161672" duration="10316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5926000" />
+    <option name="totallyTimeSpent" value="10344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -764,16 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/heuristics/Manhattan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -784,9 +774,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/heuristics/ManhattanWithTiebreaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6523888">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/heuristics/ManhattanTreasure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maze/heuristics/GreedyTreasure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57990116">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
