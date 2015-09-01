@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Artificial Intelligence.iml" filepath="$PROJECT_DIR$/Artificial Intelligence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArtificialIntelligence.iml" filepath="$PROJECT_DIR$/ArtificialIntelligence.iml" />
     </modules>
   </component>
 </project>
