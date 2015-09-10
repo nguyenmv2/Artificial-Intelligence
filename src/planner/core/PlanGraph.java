@@ -26,8 +26,26 @@ public class PlanGraph {
 	
 	public Plan extractNoDeletePlan(State current) {
 		// Stub implementation.
-		return new NoDeletePlan();
-		
+		Stack<Action> actionList = new Stack<>();
+		Queue<Predicate> predList = new LinkedList<>();
+        goals.iterator().forEachRemaining(p -> predList.add(p));
+        while (!predList.isEmpty())
+        {
+            Predicate p = predList.remove();
+            if (!current.predIsTrue(p)){
+                Action subsequenceAction = firstAdders.get(p);
+                actionList.add(subsequenceAction);
+                subsequenceAction.getPreconditions().iterator().forEachRemaining(pred -> predList.add(pred));
+            }
+        }
+        NoDeletePlan noDelPlan = new NoDeletePlan();
+
+        while(!actionList.isEmpty())
+        {
+            noDelPlan.appendAction(actionList.pop());
+        }
+        return noDelPlan;
+
 		// TODO: Implement this method.
 		// Then, use a no-delete-plan as a heuristic estimate.
 		
